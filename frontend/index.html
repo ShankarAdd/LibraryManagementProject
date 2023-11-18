@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Library Management System</title>
+</head>
+<body>
+    <h2>Books</h2>
+    <input type="text" placeholder="Please enter Book name" id="bookTitle">
+    <button onclick="submitForm()">Submit</button>
+    <div id="bookInfo">
+        <h2>Book Information</h2>
+        <p id="bookName"></p>
+        <p id="takenOn"></p>
+        <p id="returnOn"></p>
+        <p id="penalty"></p>
+        <button onclick="returnBook()">Return</button>
+    </div>
+    <div id="penaltySection">
+        <label for="penaltyAmount"></label>
+        <input type="text" id="penaltyAmount">
+        <button onclick="submitPenalty()">Pay Fine</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
